@@ -1,5 +1,5 @@
 
-# To-Do Application
+# Multi Step Form
 
 This is a simple Multi Step Form built using ReactJS, Tailwind CSS, and Redux.
 
