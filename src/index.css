@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,23 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.circular-progress{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background: conic-gradient(#f6ab29 3.6deg, #ededed 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circular-progress::before{
+  content: "";
+  position: absolute;
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  background-color: #fff;
 }
